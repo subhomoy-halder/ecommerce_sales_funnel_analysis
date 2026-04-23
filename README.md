@@ -1,9 +1,8 @@
-# Data-to-Decision: E-commerce Growth Strategy
+# Data to Decision: Ecommerce Growth Strategy
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
 ![SQL Version](https://img.shields.io/badge/SQL-SQL%20Server-red)
-![Role](https://img.shields.io/badge/Role-Strategic%20Consultant-blue)
-![Outcome](https://img.shields.io/badge/Projected%20Lift-15%2D%2022%25-green)
+![Role](https://img.shields.io/badge/Role%20-%20Business%20Analyst-blue)
 
 ## Project Overview
 Leveraging SQL Server to transform raw event data into actionable business intelligence. This repo contains a full diagnostic audit of the 'Add-to-Cart' friction point, source specific conversion analysis, and a quantitative growth model for revenue scaling.
