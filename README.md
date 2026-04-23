@@ -5,7 +5,7 @@
 ![Role](https://img.shields.io/badge/Role%20-%20Business%20Analyst-blue)
 
 ## Project Overview
-Leveraging SQL Server to transform raw event data into actionable business intelligence. This repo contains a full diagnostic audit of the 'Add-to-Cart' friction point, source specific conversion analysis, and a quantitative growth model for revenue scaling.
+Leveraged SQL and Data Analytics to transform raw business data into actionable business intelligence. This repo contains a full diagnostic audit of the 'Add-to-Cart' friction point, source specific conversion analysis, and a quantitative growth model for revenue scaling.
 
 ## Executive Summary of Results
 Acting as a lead business analyst, I audited a dataset of 5,000 unique visitors generating $87,975.11 in revenue.
