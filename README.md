@@ -35,3 +35,33 @@ The repository is organized exactly as shown below to separate data assets, anal
     ├── sales_funnel_conversion_time.sql  <-- Customer journey duration
     ├── sales_funnel_definition.sql       <-- Funnel stage logic
     └── sales_funnel_revenue_analysis.sql <-- Core financial KPIs
+```
+### Technical Implementation
+
+#### Data Schema
+The analysis utilizes a cleaned transaction log (`data/cleaned_data.csv`) with the following schema:
+
+* **event_id**       (INT)
+* **user_id**        (INT)
+* **event_type**     (VARCHAR)
+* **event_date**     (DATETIME)
+* **amount**         (DECIMAL)
+* **traffic_source** (VARCHAR)
+
+#### SQL Analysis Scripts
+The `sql_queries/` directory contains T-SQL scripts developed for a SQL Server environment to diagnose funnel performance.
+
+1. **sales_funnel_definition.sql**: Establishes the standard definitions for the 5 stage e commerce funnel.
+2. **sales_funnel_conversion_rate.sql**: Calculates drop off rates at every step. This script identified the primary bottleneck at the 'Add to Cart' phase.
+3. **sales_funnel_revenue_analysis.sql**: Computes standard KPIs including Total Revenue, AOV, and Revenue Per Visitor.
+4. **sales_funnel_by_source.sql**: Performs a dimensional analysis on traffic sources, revealing that Email converts 5x better than Social.
+5. **sales_funnel_conversion_time.sql**: Analyzes the behavioral speed of users, finding an average 25 minute journey from view to purchase.
+
+### Strategic Recommendations
+The full actionable strategy is detailed in the `docs/business-analysis-report.md`. The recommendations are:
+
+* **Fix the Product Page Leak (Priority 1)**: Implement A/B testing, social proof, and 'Exit Intent' offers on product pages to reduce the 69% drop-off rate.
+* **Scale High-ROI Channels**: Aggressively scale Email marketing volume, as it has proven product market fit (34% conv).
+* **Optimize Social Traffic**: Implement low friction, mobile optimized landing pages for Social traffic to move it from window shopping to purchase intent.
+* **AOV Nudging**: Implement a free shipping threshold at $125 (current AOV is $106.51) to increase baseline order value."""
+
