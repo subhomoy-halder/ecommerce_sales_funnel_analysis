@@ -24,6 +24,7 @@ The repository is organized exactly as shown below to separate data assets, anal
 
 ```text
 ├── README.md                             <-- You are here
+├── report_presentation.pdf               <-- PPT of the report
 ├── data/
 │   ├── cleaned_data.csv                  <-- Dataset used for analysis
 │   └── raw_data.csv                      <-- Original source data
