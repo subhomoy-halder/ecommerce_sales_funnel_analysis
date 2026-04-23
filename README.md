@@ -28,7 +28,7 @@ The repository is organized exactly as shown below to separate data assets, anal
 │   ├── cleaned_data.csv                  <-- Dataset used for analysis
 │   └── raw_data.csv                      <-- Original source data
 ├── analysis_report/
-│   └── business-analysis-report.md       <-- Final analysis report
+│   └── business_analysis_report.md       <-- Final analysis report
 └── sql_queries/
     ├── sales_funnel_by_source.sql        <-- Traffic source attribution
     ├── sales_funnel_conversion_rate.sql  <-- Stage to stage metrics
@@ -58,10 +58,10 @@ The `sql_queries/` directory contains T-SQL scripts developed for a SQL Server e
 5. **sales_funnel_conversion_time.sql**: Analyzes the behavioral speed of users, finding an average 25 minute journey from view to purchase.
 
 ### Strategic Recommendations
-The full actionable strategy is detailed in the `docs/business-analysis-report.md`. The recommendations are:
+The full actionable strategy is detailed in the `analysis_report/business_analysis_report.md`. The recommendations are:
 
 * **Fix the Product Page Leak (Priority 1)**: Implement A/B testing, social proof, and 'Exit Intent' offers on product pages to reduce the 69% drop-off rate.
 * **Scale High-ROI Channels**: Aggressively scale Email marketing volume, as it has proven product market fit (34% conv).
 * **Optimize Social Traffic**: Implement low friction, mobile optimized landing pages for Social traffic to move it from window shopping to purchase intent.
-* **AOV Nudging**: Implement a free shipping threshold at $125 (current AOV is $106.51) to increase baseline order value."""
+* **AOV Nudging**: Implement a free shipping threshold at $125 (current AOV is $106.51) to increase baseline order value.
 
