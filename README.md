@@ -28,10 +28,10 @@ The repository is organized exactly as shown below to separate data assets, anal
 │   ├── cleaned_data.csv                  <-- Dataset used for analysis
 │   └── raw_data.csv                      <-- Original source data
 ├── analysis_report/
-│   └── business-analysis-report.md       <-- Final consulting report
+│   └── business-analysis-report.md       <-- Final analysis report
 └── sql_queries/
     ├── sales_funnel_by_source.sql        <-- Traffic source attribution
-    ├── sales_funnel_conversion_rate.sql  <-- Stage-to-stage metrics
+    ├── sales_funnel_conversion_rate.sql  <-- Stage to stage metrics
     ├── sales_funnel_conversion_time.sql  <-- Customer journey duration
     ├── sales_funnel_definition.sql       <-- Funnel stage logic
     └── sales_funnel_revenue_analysis.sql <-- Core financial KPIs
