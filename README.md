@@ -1,4 +1,4 @@
-# Data to Decision: Ecommerce Growth Strateg
+# Data to Decision: Ecommerce Growth Strategy
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
 ![SQL Version](https://img.shields.io/badge/SQL-SQL%20Server-red)
