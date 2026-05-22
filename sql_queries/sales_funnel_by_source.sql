@@ -1,7 +1,7 @@
 USE sales_funnel_analysis;
 GO
 
--- SELECT * FROM users_events_cleaned
+-- SELECT * FROM users_events_cleane
 
 WITH sales_funnel_by_traffic_source AS (
     SELECT
