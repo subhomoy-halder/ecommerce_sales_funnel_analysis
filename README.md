@@ -1,64 +1,77 @@
-# Data to Decision: Ecommerce Growth Strategy
+# Ecommerce Sales Funnel Analysis
 
-## Project Overview
-Leveraged SQL and Data Analytics to transform raw business data into actionable business intelligence. This repo contains a full diagnostic audit of the 'Add-to-Cart' friction point, source specific conversion analysis, and a quantitative growth model for revenue scaling.
-
-## Executive Summary of Results
-Acting as a lead business analyst, I audited a dataset of 5,000 unique visitors generating $87,975.11 in revenue.
-
-**Key Findings:**
-* **Elite Checkout:** Once users start payment, **91.88%** complete the purchase.
-* **Critical Bottleneck:** **68.94%** of visitors abandon the journey on the product page (before 'Add to Cart').
-* **Channel Inefficiency:** Social traffic has high volume but the lowest conversion (**6.9%**). Email marketing is the highest performing channel (**33.9%**).
-
-By fixing the mid funnel leak and reallocating traffic spend, the strategic roadmap projects a **15-22% increase in top line revenue**.
+## 1. Executive Summary
+This report presents a comprehensive analysis of recent transactional and behavioral data derived from **5,000 unique visitors**. While the business has achieved a total revenue of **$87,975.11** with a **16.52% overall conversion rate**, the diagnostic audit has identified a critical friction point at the top of the funnel. By addressing the **Interest-to-Intent gap** and reallocating marketing spend toward high performing channels, the firm is positioned to realize a projected **15-22% increase in top line revenue** within the next fiscal quarter.
 
 ---
 
-## 📂 Repository Structure
-The repository is organized exactly as shown below to separate data assets, analysis scripts, and final documentation.
+## 2. Core Business Metrics (KPIs)
+The current operational baseline is established by the following key performance indicators:
 
-```text
-├── README.md                             <-- You are here
-├── report_presentation.pdf               <-- PPT of the report
-├── data/
-│   ├── cleaned_data.csv                  <-- Dataset used for analysis
-│   └── raw_data.csv                      <-- Original source data
-├── analysis_report/
-│   └── business_analysis_report.md       <-- Final analysis report
-└── sql_queries/
-    ├── sales_funnel_by_source.sql        <-- Traffic source attribution
-    ├── sales_funnel_conversion_rate.sql  <-- Stage to stage metrics
-    ├── sales_funnel_conversion_time.sql  <-- Customer journey duration
-    ├── sales_funnel_definition.sql       <-- Funnel stage logic
-    └── sales_funnel_revenue_analysis.sql <-- Core financial KPIs
-```
-### Technical Implementation
+| Metric | Value | Interpretation |
+| :--- | :--- | :--- |
+| **Total Revenue** | $87,975.11 | Strong baseline for current traffic volume. |
+| **Total Unique Visitors** | 5,000 | Healthy acquisition reach. |
+| **Average Order Value (AOV)** | $106.51 | Suggests mid to high tier product positioning. |
+| **Conversion Rate** | 16.52% | Above industry average for generic ecommerce. |
+| **Revenue Per Visitor (RPV)** | $17.60 | High, indicating efficient monetization of active users. |
 
-#### Data Schema
-The analysis utilizes a cleaned transaction log (`data/cleaned_data.csv`) with the following schema:
+---
 
-* **event_id**       (INT)
-* **user_id**        (INT)
-* **event_type**     (VARCHAR)
-* **event_date**     (DATETIME)
-* **amount**         (DECIMAL)
-* **traffic_source** (VARCHAR)
+## 3. Sales Funnel Diagnostic
+The sales funnel analysis reveals where the business is losing potential revenue. The most significant leak occurs between the initial page view and the "Add to Cart" action.
 
-#### SQL Analysis Scripts
-The `sql_queries/` directory contains T-SQL scripts developed for a SQL Server environment to diagnose funnel performance.
+### Funnel Progression Breakdown
+1.  **Stage 1: Page View (Awareness)** – 5,000 Users 
+2.  **Stage 2: Add to Cart (Interest)** – 1,553 Users (**31.06%**) 
+3.  **Stage 3: Checkout Start (Intent)** – 1,103 Users (71.02%)
+4.  **Stage 4: Payment Info (Commitment)** – 899 Users (81.50%)
+5.  **Stage 5: Purchase (Conversion)** – 826 Users (**91.88%**)
 
-1. **sales_funnel_definition.sql**: Establishes the standard definitions for the 5 stage e commerce funnel.
-2. **sales_funnel_conversion_rate.sql**: Calculates drop off rates at every step. This script identified the primary bottleneck at the 'Add to Cart' phase.
-3. **sales_funnel_revenue_analysis.sql**: Computes standard KPIs including Total Revenue, AOV, and Revenue Per Visitor.
-4. **sales_funnel_by_source.sql**: Performs a dimensional analysis on traffic sources, revealing that Email converts 5x better than Social.
-5. **sales_funnel_conversion_time.sql**: Analyzes the behavioral speed of users, finding an average 25 minute journey from view to purchase.
+**Insight:** The Micro Conversion from **View to Cart** is the primary bottleneck. Losing 69% of the traffic at the product page suggests that while the business is attracting users, the value proposition or page layout is failing to convert browsers into shoppers. Conversely, the checkout flow is elite, once a user enters payment info, the business retains nearly 92% of them.
 
-### Strategic Recommendations
-The full actionable strategy is detailed in the `analysis_report/business_analysis_report.md`. The recommendations are:
+---
 
-* **Fix the Product Page Leak (Priority 1)**: Implement A/B testing, social proof, and 'Exit Intent' offers on product pages to reduce the 69% drop-off rate.
-* **Scale High-ROI Channels**: Aggressively scale Email marketing volume, as it has proven product market fit (34% conv).
-* **Optimize Social Traffic**: Implement low friction, mobile optimized landing pages for Social traffic to move it from window shopping to purchase intent.
-* **AOV Nudging**: Implement a free shipping threshold at $125 (current AOV is $106.51) to increase baseline order value.
+## 4. Traffic Source Efficiency Analysis
+Data driven attribution shows that acquisition channels are performing with vastly different levels of efficiency.
 
+| Traffic Source | Conversion Rate | Performance Grade | Recommendation |
+| :--- | :--- | :--- | :--- |
+| **Email** | **33.91%** | **A+** | Scale volume immediately. |
+| **Paid Ads** | 21.07% | **B** | Optimize for ROAS, refine targeting. |
+| **Organic** | 16.83% | **C** | Stable, focus on SEO for high-intent keywords. |
+| **Social** | **6.93%** | **F** | High friction, shift strategy to awareness only. |
+
+**Key Findings:**
+* Email is the primary revenue driver, It converts at nearly 5x the rate of Social traffic. This indicates a high trust relationship with the existing customer base.
+*  Social traffic is likely "low intent". This channel is currently diluting RPV (Revenue Per Visitor).
+
+---
+
+## 5. Behavioral Timeline
+* **Average Time to Cart:** 11.16 Minutes
+* **Average Time to Purchase:** 13.47 Minutes (after carting)
+* **Total Journey Time:** **24.63 Minutes**
+
+The ~25 minute journey time indicates a considered purchase cycle. Customers are taking time to compare options or read descriptions. This validates the need for high quality content and social proof on product pages.
+
+---
+
+## 6. Strategic Implementation Roadmap
+
+### Phase 1: High Impact Quick Wins (Immediate)
+* **Retargeting Social Traffic:** Since Social converts poorly, implement a specific retargeting pixel for social visitors that offers a first time purchase discount.
+* **Email Frequency:** Increase the frequency of segmented email campaigns. The customer base is highly responsive.
+
+### Phase 2: Conversion Rate Optimization (30-60 Days)
+* **The View-to-Cart Fix:** Implement A/B testing on product pages. Focus on improving mobile UI for the "Add to Cart" button and adding customer testimonial carousels.
+* **Exit Intent Strategy:** Deploy pop ups for users leaving the product page without adding to cart, offering lead magnets or limited time offers.
+
+### Phase 3: Increasing Lifetime Value (90 Days)
+* **AOV Upselling:** The AOV is $106.51. Introduce a **Free Shipping at $125** threshold to nudge customers toward adding one more item to their cart.
+* **Bundling Strategy:** Create product bundles (Product A + Product B) at a 10% discount to increase the number of items per order.
+
+---
+
+## 7. Conclusion
+The business is fundamentally strong with a highly effi
