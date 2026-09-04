@@ -8,7 +8,7 @@
 
 ---
 
-# 🚨 Executive Summary
+# Executive Summary
 
 <img src="report_slides/Slide 1.png" >
 
@@ -27,33 +27,33 @@ The business generated:
 
 While the headline metrics indicate solid performance, the detailed funnel analysis reveals a significant weakness in the early stages of the customer journey.
 
-## 🎯 Primary Finding
+## Primary Finding
 
-The largest customer drop-off occurs between:
+The largest customer drop off occurs between:
 
-# 👀 Page View → 🛒 Add to Cart
+# Page View → Add to Cart
 
 Out of **5,000 unique visitors**, only **1,553 users** added an item to their cart.
 
 This represents:
 
-> ## **31.06% View-to-Cart Conversion**
->
-> ## **68.94% Drop-Off Before Add to Cart**
+### **31.06% View-to-Cart Conversion**
+
+### **68.94% Drop Off Before Add to Cart**
 
 By contrast, users who progress further through the funnel convert at much stronger rates.
 
 Most notably:
 
-> **91.88% of users who reach the Payment Info stage complete a purchase.**
+**91.88% of users who reach the Payment Info stage complete a purchase.**
 
-The strongest data-supported conclusion is therefore:
+The strongest data supported conclusion is therefore:
 
-### 🎯 The primary bottleneck is at the top of the funnel, not in the final checkout stage.
+### The primary bottleneck is at the top of the funnel, not in the final checkout stage.
 
 ---
 
-# 💼 Business Problem
+# Business Problem
 
 <img src="report_slides/Slide 2.png" >
 
@@ -67,9 +67,9 @@ The business appears healthy when viewed through high-level KPIs such as:
 - Overall conversion rate
 - Revenue per visitor
 
-However, these surface-level metrics do not answer the most important business question:
+However, these surface level metrics do not answer the most important business question:
 
-> # Where exactly are potential customers being lost before they convert?
+### Where exactly are potential customers being lost before they convert?
 
 A strong overall conversion rate does not reveal:
 
@@ -86,7 +86,6 @@ This project therefore performs a **sales funnel diagnostic** to identify where 
 # ❓ Business Questions
 
 <img src="report_slides/Slide 3.png" >
-
 
 ---
 
@@ -125,7 +124,6 @@ The analysis was designed to answer the following business questions:
 # 📊 Data Used
 
 <img src="report_slides/Slide 4.png" >
-
 
 ---
 
@@ -175,7 +173,7 @@ This allows conversion performance to be compared across different traffic sourc
 
 ---
 
-# 🧠 Analysis Methodology
+# Analysis Methodology
 
 <img src="report_slides/Slide 5.png" >
 
@@ -227,7 +225,7 @@ BUSINESS INSIGHTS
 
 ---
 
-# 💰 Core Business Metrics
+# Core Business Metrics
 
 The first objective was to establish the overall performance baseline of the business.
 
@@ -245,29 +243,29 @@ The analysis calculates:
 
 ---
 
-## 💻 SQL Query
+## SQL Query
 
 <img src="query_outputs/5_revenue_kpi_metrics.png" >
 
 ---
 
-## 📈 Key Metrics
+## Key Metrics
 
 | Metric | Value |
 |---|---:|
-| 👥 Total Unique Visitors | **5,000** |
-| 🛒 Total Buyers | **826** |
-| 💰 Total Revenue | **$87,975.11** |
-| 📦 Total Orders | **826** |
-| 📊 Orders Per Visitor | **0.17** |
-| 💵 Revenue Per Visitor | **$17.60** |
-| 📈 Visitor-to-Buyer Conversion Rate | **16.52%** |
-| 🛍️ Average Order Value | **$106.51** |
-| 💰 Revenue Per Buyer | **$106.51** |
+| Total Unique Visitors | **5,000** |
+| Total Buyers | **826** |
+| Total Revenue | **$87,975.11** |
+| Total Orders | **826** |
+| Orders Per Visitor | **0.17** |
+| Revenue Per Visitor | **$17.60** |
+| Visitor to Buyer Conversion Rate | **16.52%** |
+| Average Order Value | **$106.51** |
+| Revenue Per Buyer | **$106.51** |
 
 ---
 
-## 🔍 Business Interpretation
+## Business Interpretation
 
 The business has established a solid baseline with:
 
@@ -282,7 +280,7 @@ The next analysis therefore examines the complete customer journey.
 
 ---
 
-# 🔻 Sales Funnel Analysis
+# Sales Funnel Analysis
 
 <img src="report_slides/Slide 6.png" >
 
@@ -293,40 +291,40 @@ The sales funnel was constructed to measure the number of unique users reaching 
 ## Funnel Stages
 
 ```text
-👀 Page View
-      ↓
-🛒 Add to Cart
-      ↓
-🚪 Checkout Start
-      ↓
-💳 Payment Info
-      ↓
-✅ Purchase
+Page View
+    ↓
+Add to Cart
+    ↓
+Checkout Start
+    ↓
+Payment Info
+    ↓
+Purchase
 ```
 
 ---
 
-## 💻 SQL Query
+## SQL Query
 
 <img src="query_outputs/4_customers_at_each_funnel_stage.png" >
 
 ---
 
-## 📈 Funnel Results
+## Funnel Results
 
 | Funnel Stage | Users | % of Total Visitors |
 |---|---:|---:|
-| 👀 Page View | **5,000** | 100.00% |
-| 🛒 Add to Cart | **1,553** | 31.06% |
-| 🚪 Checkout Start | **1,103** | 22.06% |
-| 💳 Payment Info | **899** | 17.98% |
-| ✅ Purchase | **826** | 16.52% |
+| Page View | **5,000** | 100.00% |
+| Add to Cart | **1,553** | 31.06% |
+| Checkout Start | **1,103** | 22.06% |
+| Payment Info | **899** | 17.98% |
+| Purchase | **826** | 16.52% |
 
 ---
 
-## 🔴 Largest Funnel Leak
+## Largest Funnel Leak
 
-The largest customer drop-off occurs immediately after the Page View stage:
+The largest customer drop off occurs immediately after the Page View stage:
 
 ```text
 5,000 Users
@@ -338,13 +336,13 @@ Only **31.06%** of users add an item to their cart.
 
 This means:
 
-> # **68.94% of users drop before Add to Cart.**
+### **68.94% of users drop before Add to Cart.**
 
 This is the single largest loss of potential customers anywhere in the recorded funnel.
 
 ---
 
-# 📉 Funnel Conversion Analysis
+# Funnel Conversion Analysis
 
 The next step calculates how efficiently users progress from one stage to the next.
 
@@ -364,13 +362,13 @@ Purchase / Page View
 
 ---
 
-## 💻 SQL Query
+## SQL Query
 
 <img src="query_outputs/2_sales_funnel_conversion_rate.png" >
 
 ---
 
-## 📈 Conversion Results
+## Conversion Results
 
 | Funnel Transition | Conversion Rate |
 |---|---:|
@@ -382,25 +380,25 @@ Purchase / Page View
 
 ---
 
-## 🔍 Key Insight
+## Key Insight
 
 Conversion efficiency improves as users progress deeper into the funnel.
 
 The weakest transition is clearly:
 
-> # 👀 View → 🛒 Add to Cart
+### View → Add to Cart
 
 Meanwhile, the strongest transition is:
 
-> # 💳 Payment Info → ✅ Purchase
->
-> **91.88% conversion**
+### Payment Info → Purchase
+
+### **91.88% conversion**
 
 The data indicates that users who reach strong purchase intent generally complete the transaction.
 
 ---
 
-# ✅ This Is Not Primarily a Checkout Problem
+# This Is Not Primarily a Checkout Problem
 
 <img src="report_slides/Slide 7.png" >
 
@@ -410,31 +408,31 @@ The strongest evidence comes from the final funnel stage.
 
 ## Checkout Completion
 
-> # **91.88%**
->
-> of users who reach the Payment Info stage complete their purchase.
+### **91.88%**
+
+### of users who reach the Payment Info stage complete their purchase.
 
 This means the final conversion stages are performing significantly better than the beginning of the customer journey.
 
 ### Therefore:
 
-❌ The primary business problem identified by this dataset is not the late-stage checkout process.
+The primary business problem identified by this dataset is not the late-stage checkout process.
 
 ### The main opportunity is:
 
-# 🎯 Converting more visitors into users with purchase intent.
+# Converting more visitors into users with purchase intent.
 
 Specifically:
 
 ```text
 Page View
     ↓
-🛒 Add to Cart
+Add to Cart
 ```
 
 ---
 
-# ⏱️ Customer Journey Time Analysis
+# Customer Journey Time Analysis
 
 The project analyzes how long converted customers take to move through the recorded journey.
 
@@ -450,13 +448,13 @@ First Purchase
 
 ---
 
-## 💻 SQL Query
+## SQL Query
 
 <img src="query_outputs/3_journey_times.png" >
 
 ---
 
-## ⏱️ Journey Time Results
+## Journey Time Results
 
 | Journey Metric | Average Time |
 |---|---:|
@@ -466,11 +464,11 @@ First Purchase
 
 ---
 
-## 🔍 Business Interpretation
+## Business Interpretation
 
 Converted customers take approximately:
 
-> # **24.63 minutes**
+### **24.63 minutes**
 
 on average to move from their first recorded Page View to Purchase.
 
@@ -489,11 +487,11 @@ Potential areas for further investigation include:
 - Mobile experience
 - Trust signals
 
-> ⚠️ The dataset identifies where users drop off and how long the recorded journey takes. It does not directly establish the specific reason why users abandon the funnel.
+### The data identifies where users drop off and how long the recorded journey takes. It does not directly establish the specific reason why users abandon the funnel.
 
 ---
 
-# 🚦 Traffic Source Analysis
+# Traffic Source Analysis
 
 The project compares user behavior across:
 
@@ -513,32 +511,32 @@ The analysis measures:
 
 ---
 
-## 💻 SQL Query
+## SQL Query
 
 <img src="query_outputs/1_conversion_by_source.png" >
 
 ---
 
-## 📈 Conversion Results by Traffic Source
+## Conversion Results by Traffic Source
 
 | Traffic Source | Visitors | Added to Cart | Purchases | View → Cart | Cart → Purchase | Overall Conversion |
 |---|---:|---:|---:|---:|---:|---:|
-| 🌱 Organic | 2,038 | 669 | 343 | **32.83%** | **51.27%** | **16.83%** |
-| 💰 Paid Ads | 968 | 358 | 204 | **36.98%** | **56.98%** | **21.07%** |
-| 📱 Social | 1,472 | 200 | 102 | **13.59%** | **51.00%** | **6.93%** |
-| 📧 Email | 522 | 326 | 177 | **62.45%** | **54.29%** | **33.91%** |
+| Organic | 2,038 | 669 | 343 | **32.83%** | **51.27%** | **16.83%** |
+| Paid Ads | 968 | 358 | 204 | **36.98%** | **56.98%** | **21.07%** |
+| Social | 1,472 | 200 | 102 | **13.59%** | **51.00%** | **6.93%** |
+| Email | 522 | 326 | 177 | **62.45%** | **54.29%** | **33.91%** |
 
 ---
 
-## 📧 Email — Highest Conversion Rate
+## Email — Highest Conversion Rate
 
 Email has the highest observed overall conversion rate:
 
-> # **33.91%**
+### **33.91%**
 
 It also has the highest View → Add to Cart conversion rate:
 
-> **62.45%**
+### **62.45%**
 
 This indicates that users acquired through Email are substantially more likely to progress into the purchase funnel.
 
@@ -553,15 +551,15 @@ Investigate:
 
 ---
 
-## 💰 Paid Ads — Strong Conversion Performance
+## Paid Ads — Strong Conversion Performance
 
 Paid Ads generate:
 
-> **21.07% overall conversion**
+### **21.07% overall conversion**
 
 and:
 
-> **36.98% View-to-Cart conversion**
+### **36.98% View-to-Cart conversion**
 
 This makes Paid Ads the second-best traffic source by overall conversion rate.
 
@@ -576,7 +574,7 @@ Further analysis should evaluate:
 
 ---
 
-## 🌱 Organic — Largest Traffic Source
+## Organic — Largest Traffic Source
 
 Organic generates:
 
@@ -587,7 +585,7 @@ This makes Organic the largest contributor to traffic and the largest contributo
 
 Its overall conversion rate is:
 
-> **16.83%**
+### **16.83%**
 
 ### Recommendation
 
@@ -600,7 +598,7 @@ Focus on:
 
 ---
 
-## 📱 Social — Lowest Conversion Performance
+## Social — Lowest Conversion Performance
 
 Social generates:
 
@@ -610,11 +608,11 @@ Social generates:
 
 Its overall conversion rate is:
 
-> # **6.93%**
+### **6.93%**
 
 The View → Add to Cart conversion rate is also the lowest:
 
-> **13.59%**
+### **13.59%**
 
 ### Recommendation
 
@@ -624,71 +622,71 @@ Investigate whether Social traffic should be treated primarily as:
 - Discovery traffic
 - Retargeting audiences
 
-The business should avoid assuming that Social itself is inherently low quality without further campaign-level analysis.
+The business should avoid assuming that Social itself is inherently low quality without further campaign level analysis.
 
 ---
 
-# 💡 Key Business Findings
+# Key Business Findings
 
-## 1️⃣ The Largest Opportunity Is at the Top of the Funnel
+## The Largest Opportunity Is at the Top of the Funnel
 
 The biggest customer loss occurs before Add to Cart:
 
-> **68.94% drop-off**
+### **68.94% drop-off**
 
 The business should prioritize improving the earliest major conversion bottleneck.
 
 ---
 
-## 2️⃣ Late-Stage Conversion Is Strong
+## Late Stage Conversion Is Strong
 
 Once users reach the Payment Info stage:
 
-> **91.88% complete a purchase**
+### **91.88% complete a purchase**
 
 The available data does not identify the final checkout stage as the primary source of lost revenue.
 
 ---
 
-## 3️⃣ Email Has the Highest Observed Conversion Rate
+## Email Has the Highest Observed Conversion Rate
 
 Email converts:
 
-> **33.91% of visitors**
+### **33.91% of visitors**
 
 This is the highest overall conversion rate among the analyzed traffic sources.
 
 ---
 
-## 4️⃣ Social Has the Lowest Observed Conversion Rate
+## Social Has the Lowest Observed Conversion Rate
 
 Social converts:
 
-> **6.93% of visitors**
+### **6.93% of visitors**
 
 The most significant weakness occurs at the transition from:
 
-> **View → Add to Cart**
+### **View → Add to Cart**
 
 ---
 
-## 5️⃣ Customers Take Approximately 25 Minutes to Complete the Recorded Journey
+## Customers Take Approximately 25 Minutes to Complete the Recorded Journey
 
 The average total journey time is:
 
-> **24.63 minutes**
+### **24.63 minutes**
 
 This suggests a customer journey involving product evaluation before purchase.
 
 ---
 
-# 🎯 Strategic Recommendations
+# Strategic Recommendations
 
 <img src="report_slides/Slide 8.png" >
 
 ---
 
-# 1️⃣ Improve Product Discovery
+# Improve Product Discovery
 
 Improve how users find relevant products.
 
@@ -704,11 +702,11 @@ Potential areas for experimentation:
 
 Increase:
 
-> # View → Add to Cart Conversion
+### View → Add to Cart Conversion
 
 ---
 
-# 2️⃣ Strengthen Product Engagement
+# Strengthen Product Engagement
 
 Users drop before demonstrating strong purchase intent.
 
@@ -726,11 +724,11 @@ These should be treated as hypotheses and tested through controlled experimentat
 
 ---
 
-# 3️⃣ Re-Engage Early Funnel Drop-Offs
+# Re engage Early Funnel Drop-Offs
 
 The largest recoverable audience consists of users who:
 
-> View products but leave without adding an item to the cart.
+### View products but leave without adding an item to the cart.
 
 Potential strategies include:
 
@@ -742,17 +740,17 @@ Potential strategies include:
 
 ---
 
-# 4️⃣ Use the Largest Bottleneck as the Primary Optimization Metric
+# Use the Largest Bottleneck as the Primary Optimization Metric
 
 The most important experiment metric should be:
 
-> # View → Add to Cart Conversion Rate
+### View → Add to Cart Conversion Rate
 
 The objective should be to determine which specific changes increase the percentage of visitors entering the high-converting lower funnel.
 
 ---
 
-# 📈 Expected Business Impact
+# Expected Business Impact
 
 <img src="report_slides/Slide 9.png" >
 
@@ -760,26 +758,24 @@ The objective should be to determine which specific changes increase the percent
 
 The presentation identifies a potential:
 
-> # **15–22% Revenue Increase Opportunity**
+### **15–22% Revenue Increase Opportunity**
 
 by improving conversion at the:
 
-> # 👀 View → 🛒 Add to Cart stage
+### View → Add to Cart stage
 
-However, this should be interpreted carefully.
+## Important Note
 
-## ⚠️ Important Note
+The **15–22% figure is presented as a scenario based opportunity estimate**, not as a guaranteed forecast.
 
-The **15–22% figure should be presented as a scenario-based opportunity estimate**, not as a guaranteed forecast, unless a documented calculation demonstrates exactly how the range was derived.
-
-The strongest data-supported conclusion is:
+The strongest data supported conclusion is:
 
 ```text
 More Existing Visitors
         ↓
 More Add to Cart Users
         ↓
-More Users Enter High-Converting Funnel Stages
+More Users Enter High Converting Funnel Stages
         ↓
 More Potential Purchases
         ↓
@@ -790,7 +786,7 @@ Because downstream conversion rates are already strong, improving the earliest m
 
 ---
 
-# 🧩 SQL Concepts Demonstrated
+# SQL Concepts Demonstrated
 
 This project demonstrates practical use of:
 
@@ -814,9 +810,9 @@ This project demonstrates practical use of:
 
 ---
 
-# 🏁 Final Conclusion
+# Final Conclusion
 
-This project demonstrates why high-level business metrics alone are not enough to diagnose conversion performance.
+This project demonstrates why high level business metrics alone are not enough to diagnose conversion performance.
 
 The ecommerce business has:
 
@@ -828,19 +824,19 @@ The ecommerce business has:
 
 However, funnel analysis reveals that the greatest opportunity occurs much earlier in the customer journey.
 
-> # **68.94% of users drop before Add to Cart.**
+### **68.94% of users drop before Add to Cart.**
 
 At the same time:
 
-> # **91.88% of users reaching Payment Info complete a purchase.**
+### **91.88% of users reaching Payment Info complete a purchase.**
 
 The analysis therefore identifies the top of the funnel as the primary area for optimization.
 
-# 🎯 Final Business Recommendation
+# Final Business Recommendation
 
 ## Prioritize improving:
 
-# 👀 PAGE VIEW → 🛒 ADD TO CART
+# PAGE VIEW → ADD TO CART
 
 The next step should be controlled experimentation focused on:
 
@@ -850,7 +846,7 @@ The next step should be controlled experimentation focused on:
 - Trust signals
 - User experience
 
-The goal is to determine which changes can move more existing visitors into the high-converting lower stages of the funnel.
+The goal is to determine which changes can move more existing visitors into the high converting lower stages of the funnel.
 
 ---
 
