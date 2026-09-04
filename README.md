@@ -10,14 +10,7 @@
 
 # 🚨 Executive Summary
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 1                                     -->
-<!-- ========================================================= -->
-
-<!-- Replace the placeholder below with: -->
-<!-- ![Executive Summary](presentation/slide-01.png) -->
-
-![Presentation Slide 1 - Executive Summary](YOUR_SLIDE_01_IMAGE_PATH)
+<img src="report_slides/Slide 1.png" >
 
 ---
 
@@ -62,14 +55,7 @@ The strongest data-supported conclusion is therefore:
 
 # 💼 Business Problem
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 2                                     -->
-<!-- ========================================================= -->
-
-<!-- Replace with: -->
-<!-- ![Business Overview](presentation/slide-02.png) -->
-
-![Presentation Slide 2 - The Business Looks Healthy](YOUR_SLIDE_02_IMAGE_PATH)
+<img src="report_slides/Slide 2.png" >
 
 ---
 
@@ -99,14 +85,8 @@ This project therefore performs a **sales funnel diagnostic** to identify where 
 
 # ❓ Business Questions
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 3                                     -->
-<!-- ========================================================= -->
+<img src="report_slides/Slide 3.png" >
 
-<!-- Replace with: -->
-<!-- ![Business Questions](presentation/slide-03.png) -->
-
-![Presentation Slide 3 - The Real Question](YOUR_SLIDE_03_IMAGE_PATH)
 
 ---
 
@@ -144,14 +124,8 @@ The analysis was designed to answer the following business questions:
 
 # 📊 Data Used
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 4                                     -->
-<!-- ========================================================= -->
+<img src="report_slides/Slide 4.png" >
 
-<!-- Replace with: -->
-<!-- ![Data Used](presentation/slide-04.png) -->
-
-![Presentation Slide 4 - Events, Transactions and Traffic](YOUR_SLIDE_04_IMAGE_PATH)
 
 ---
 
@@ -203,14 +177,8 @@ This allows conversion performance to be compared across different traffic sourc
 
 # 🧠 Analysis Methodology
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 5                                     -->
-<!-- ========================================================= -->
+<img src="report_slides/Slide 5.png" >
 
-<!-- Replace with: -->
-<!-- ![Analysis Methodology](presentation/slide-05.png) -->
-
-![Presentation Slide 5 - How the Funnel Was Constructed](YOUR_SLIDE_05_IMAGE_PATH)
 
 ---
 
@@ -279,37 +247,11 @@ The analysis calculates:
 
 ## 💻 SQL Query
 
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: CORE BUSINESS METRICS SQL QUERY              -->
-<!-- ========================================================= -->
-
-<!-- Insert the complete SQL query here -->
-
-```sql
--- ============================================================
--- CORE BUSINESS METRICS
--- ============================================================
-
--- PASTE SQL QUERY HERE
-```
-
----
-
-## 📊 SQL Query Output
-
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: CORE BUSINESS METRICS OUTPUT                 -->
-<!-- ========================================================= -->
-
-<!-- Replace with your SQL query output screenshot -->
-
-![Core Business Metrics SQL Output](YOUR_CORE_METRICS_SQL_OUTPUT_PATH)
+<img src="query_outputs/5_revenue_kpi_metrics.png" >
 
 ---
 
 ## 📈 Key Metrics
-
-![Revenue KPI Metrics](images/5_revenue_kpi_metrics.png)
 
 | Metric | Value |
 |---|---:|
@@ -342,14 +284,7 @@ The next analysis therefore examines the complete customer journey.
 
 # 🔻 Sales Funnel Analysis
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 6                                     -->
-<!-- ========================================================= -->
-
-<!-- Replace with: -->
-<!-- ![Funnel Breakdown](presentation/slide-06.png) -->
-
-![Presentation Slide 6 - Where Users Drop Off](YOUR_SLIDE_06_IMAGE_PATH)
+<img src="report_slides/Slide 6.png" >
 
 ---
 
@@ -373,37 +308,11 @@ The sales funnel was constructed to measure the number of unique users reaching 
 
 ## 💻 SQL Query
 
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: SALES FUNNEL SQL QUERY                       -->
-<!-- ========================================================= -->
-
-<!-- Insert your complete sales_funnel CTE query here -->
-
-```sql
--- ============================================================
--- SALES FUNNEL ANALYSIS
--- ============================================================
-
--- PASTE SQL QUERY HERE
-```
-
----
-
-## 📊 SQL Query Output
-
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: SALES FUNNEL SQL OUTPUT                      -->
-<!-- ========================================================= -->
-
-<!-- Replace with your SQL query result screenshot -->
-
-![Sales Funnel SQL Output](YOUR_SALES_FUNNEL_SQL_OUTPUT_PATH)
+<img src="query_outputs/4_customers_at_each_funnel_stage.png" >
 
 ---
 
 ## 📈 Funnel Results
-
-![Customers at Each Funnel Stage](images/4_customers_at_each_funnel_stage.png)
 
 | Funnel Stage | Users | % of Total Visitors |
 |---|---:|---:|
@@ -457,37 +366,11 @@ Purchase / Page View
 
 ## 💻 SQL Query
 
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: FUNNEL CONVERSION RATE SQL QUERY             -->
-<!-- ========================================================= -->
-
-<!-- Insert your complete sales_funnel_conversion_rate query -->
-
-```sql
--- ============================================================
--- SALES FUNNEL CONVERSION RATES
--- ============================================================
-
--- PASTE SQL QUERY HERE
-```
-
----
-
-## 📊 SQL Query Output
-
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: FUNNEL CONVERSION RATE SQL OUTPUT            -->
-<!-- ========================================================= -->
-
-<!-- Replace with your SQL query result screenshot -->
-
-![Funnel Conversion SQL Output](YOUR_FUNNEL_CONVERSION_SQL_OUTPUT_PATH)
+<img src="query_outputs/2_sales_funnel_conversion_rate.png" >
 
 ---
 
 ## 📈 Conversion Results
-
-![Sales Funnel Conversion Rates](images/2_sales_funnel_conversion_rate.png)
 
 | Funnel Transition | Conversion Rate |
 |---|---:|
@@ -519,14 +402,7 @@ The data indicates that users who reach strong purchase intent generally complet
 
 # ✅ This Is Not Primarily a Checkout Problem
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 7                                     -->
-<!-- ========================================================= -->
-
-<!-- Replace with: -->
-<!-- ![Checkout Analysis](presentation/slide-07.png) -->
-
-![Presentation Slide 7 - This Is Not a Checkout Problem](YOUR_SLIDE_07_IMAGE_PATH)
+<img src="report_slides/Slide 7.png" >
 
 ---
 
@@ -576,37 +452,11 @@ First Purchase
 
 ## 💻 SQL Query
 
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: JOURNEY TIME SQL QUERY                       -->
-<!-- ========================================================= -->
-
-<!-- Insert your complete funnel_times and journey_times query -->
-
-```sql
--- ============================================================
--- CUSTOMER JOURNEY TIME ANALYSIS
--- ============================================================
-
--- PASTE SQL QUERY HERE
-```
-
----
-
-## 📊 SQL Query Output
-
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: JOURNEY TIME SQL OUTPUT                      -->
-<!-- ========================================================= -->
-
-<!-- Replace with your SQL query result screenshot -->
-
-![Journey Time SQL Output](YOUR_JOURNEY_TIME_SQL_OUTPUT_PATH)
+<img src="query_outputs/3_journey_times.png" >
 
 ---
 
 ## ⏱️ Journey Time Results
-
-![Customer Journey Times](images/3_journey_times.png)
 
 | Journey Metric | Average Time |
 |---|---:|
@@ -665,38 +515,11 @@ The analysis measures:
 
 ## 💻 SQL Query
 
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: TRAFFIC SOURCE ANALYSIS SQL QUERY            -->
-<!-- ========================================================= -->
-
-<!-- Insert your complete sales_funnel_by_traffic_source and -->
-<!-- conversion_by_source query here -->
-
-```sql
--- ============================================================
--- TRAFFIC SOURCE CONVERSION ANALYSIS
--- ============================================================
-
--- PASTE SQL QUERY HERE
-```
-
----
-
-## 📊 SQL Query Output
-
-<!-- ========================================================= -->
-<!-- PLACEHOLDER: TRAFFIC SOURCE SQL OUTPUT                    -->
-<!-- ========================================================= -->
-
-<!-- Replace with your SQL query result screenshot -->
-
-![Traffic Source SQL Output](YOUR_TRAFFIC_SOURCE_SQL_OUTPUT_PATH)
+<img src="query_outputs/1_conversion_by_source.png" >
 
 ---
 
 ## 📈 Conversion Results by Traffic Source
-
-![Conversion by Traffic Source](images/1_conversion_by_source.png)
 
 | Traffic Source | Visitors | Added to Cart | Purchases | View → Cart | Cart → Purchase | Overall Conversion |
 |---|---:|---:|---:|---:|---:|---:|
@@ -861,14 +684,7 @@ This suggests a customer journey involving product evaluation before purchase.
 
 # 🎯 Strategic Recommendations
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 8                                     -->
-<!-- ========================================================= -->
-
-<!-- Replace with: -->
-<!-- ![Recommended Actions](presentation/slide-08.png) -->
-
-![Presentation Slide 8 - Recommended Actions](YOUR_SLIDE_08_IMAGE_PATH)
+<img src="report_slides/Slide 8.png" >
 
 ---
 
@@ -938,14 +754,7 @@ The objective should be to determine which specific changes increase the percent
 
 # 📈 Expected Business Impact
 
-<!-- ========================================================= -->
-<!-- PRESENTATION SLIDE 9                                     -->
-<!-- ========================================================= -->
-
-<!-- Replace with: -->
-<!-- ![Expected Business Impact](presentation/slide-09.png) -->
-
-![Presentation Slide 9 - Expected Business Impact](YOUR_SLIDE_09_IMAGE_PATH)
+<img src="report_slides/Slide 9.png" >
 
 ---
 
@@ -1002,47 +811,6 @@ This project demonstrates practical use of:
 - Customer Journey Analysis
 - Revenue KPI Analysis
 - Traffic Source Segmentation
-
----
-
-# 📂 Project Structure
-
-```text
-Ecommerce-Sales-Funnel-Analysis/
-│
-├── README.md
-│
-├── sql/
-│   └── ecommerce_sales_funnel_analysis.sql
-│
-├── presentation/
-│   ├── slide-01-executive-summary.png
-│   ├── slide-02-business-overview.png
-│   ├── slide-03-business-questions.png
-│   ├── slide-04-data-used.png
-│   ├── slide-05-analysis-methodology.png
-│   ├── slide-06-funnel-breakdown.png
-│   ├── slide-07-checkout-analysis.png
-│   ├── slide-08-recommendations.png
-│   └── slide-09-expected-impact.png
-│
-├── images/
-│   ├── 1_conversion_by_source.png
-│   ├── 2_sales_funnel_conversion_rate.png
-│   ├── 3_journey_times.png
-│   ├── 4_customers_at_each_funnel_stage.png
-│   └── 5_revenue_kpi_metrics.png
-│
-├── outputs/
-│   ├── 01_traffic_source_analysis_output.png
-│   ├── 02_funnel_conversion_output.png
-│   ├── 03_journey_time_output.png
-│   ├── 04_sales_funnel_output.png
-│   └── 05_revenue_metrics_output.png
-│
-└── report/
-    └── Ecommerce_Sales_Funnel_Analysis_Report.pdf
-```
 
 ---
 
