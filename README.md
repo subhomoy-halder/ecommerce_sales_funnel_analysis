@@ -83,7 +83,7 @@ This project therefore performs a **sales funnel diagnostic** to identify where 
 
 ---
 
-# ❓ Business Questions
+# Business Questions
 
 <img src="report_slides/Slide 3.png" >
 
@@ -91,14 +91,14 @@ This project therefore performs a **sales funnel diagnostic** to identify where 
 
 The analysis was designed to answer the following business questions:
 
-### 1️⃣ Funnel Performance
+### Funnel Performance
 
 - How many unique users reach each stage of the sales funnel?
 - Where does the largest customer drop-off occur?
 - What percentage of users progress between consecutive stages?
 - What is the overall conversion rate from Page View to Purchase?
 
-### 2️⃣ Revenue Performance
+### Revenue Performance
 
 - How much total revenue has the business generated?
 - How many buyers and orders were recorded?
@@ -106,13 +106,13 @@ The analysis was designed to answer the following business questions:
 - What is the Revenue Per Visitor?
 - What is the Revenue Per Buyer?
 
-### 3️⃣ Customer Journey
+### Customer Journey
 
 - How long does the average customer take to add an item to their cart?
 - How long does it take for converted customers to complete a purchase?
 - How long is the total recorded customer journey?
 
-### 4️⃣ Traffic Source Performance
+### Traffic Source Performance
 
 - Which traffic sources generate the most visitors?
 - Which traffic sources generate the highest conversion rates?
@@ -121,7 +121,7 @@ The analysis was designed to answer the following business questions:
 
 ---
 
-# 📊 Data Used
+# Data Used
 
 <img src="report_slides/Slide 4.png" >
 
