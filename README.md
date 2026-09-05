@@ -1,4 +1,4 @@
-# 🛒 Ecommerce Sales Funnel Analysis using SQL
+# Ecommerce Sales Funnel Analysis using SQL
 
 > An end to end SQL analysis project that examines ecommerce user behavior across the customer journey, identifies where potential customers drop off, evaluates traffic source conversion performance, measures customer journey time, and translates findings into actionable business recommendations.
 
@@ -37,11 +37,11 @@ Out of **5,000 unique visitors**, only **1,553 users** added an item to their ca
 
 This represents:
 
-### **31.06% View-to-Cart Conversion**
+### **31.06% View to Cart Conversion**
 
 ### **68.94% Drop Off Before Add to Cart**
 
-By contrast, users who progress further through the funnel convert at much stronger rates.
+By contrast users who progress further through the funnel convert at much stronger rates.
 
 Most notably:
 
@@ -59,7 +59,7 @@ The strongest data supported conclusion is therefore:
 
 ---
 
-The business appears healthy when viewed through high-level KPIs such as:
+The business appears healthy when viewed through high level KPIs such as:
 
 - Revenue
 - Total visitors
@@ -94,7 +94,7 @@ The analysis was designed to answer the following business questions:
 ### Funnel Performance
 
 - How many unique users reach each stage of the sales funnel?
-- Where does the largest customer drop-off occur?
+- Where does the largest customer drop off occur?
 - What percentage of users progress between consecutive stages?
 - What is the overall conversion rate from Page View to Purchase?
 
@@ -199,9 +199,9 @@ The SQL analysis uses:
 - Common Table Expressions (CTEs)
 - Conditional aggregation
 - Distinct user counting
-- Conversion-rate calculations
+- Conversion rate calculations
 - Timestamp analysis
-- Traffic-source segmentation
+- Traffic source segmentation
 
 The analysis is organized into the following major components:
 
@@ -237,7 +237,7 @@ The analysis calculates:
 - Total orders
 - Orders per visitor
 - Revenue per visitor
-- Visitor-to-buyer conversion rate
+- Visitor to buyer conversion rate
 - Average Order Value
 - Revenue per buyer
 
@@ -272,7 +272,7 @@ The business has established a solid baseline with:
 - Nearly **$88K in revenue**
 - **5,000 unique visitors**
 - **826 completed purchases**
-- A **16.52% overall visitor-to-buyer conversion rate**
+- A **16.52% overall visitor to buyer conversion rate**
 
 However, these metrics alone do not reveal where the business is losing potential customers.
 
@@ -388,13 +388,11 @@ The weakest transition is clearly:
 
 ### View → Add to Cart
 
-Meanwhile, the strongest transition is:
+The strongest transition is:
 
 ### Payment Info → Purchase
 
 ### **91.88% conversion**
-
-The data indicates that users who reach strong purchase intent generally complete the transaction.
 
 ---
 
@@ -410,13 +408,13 @@ The strongest evidence comes from the final funnel stage.
 
 ### **91.88%**
 
-### of users who reach the Payment Info stage complete their purchase.
+### of users who reach the Payment stage complete their purchase.
 
 This means the final conversion stages are performing significantly better than the beginning of the customer journey.
 
 ### Therefore:
 
-The primary business problem identified by this dataset is not the late-stage checkout process.
+The primary business problem identified by this dataset is not the late stage checkout process.
 
 ### The main opportunity is:
 
@@ -505,8 +503,8 @@ The analysis measures:
 - Unique visitors
 - Users who add products to cart
 - Users who purchase
-- View-to-Cart conversion
-- Cart-to-Purchase conversion
+- View to Cart conversion
+- Cart to Purchase conversion
 - Overall conversion
 
 ---
@@ -544,7 +542,7 @@ This indicates that users acquired through Email are substantially more likely t
 
 Investigate:
 
-- High-performing customer segments
+- High performing customer segments
 - Campaign performance
 - Personalization
 - Targeting strategy
@@ -559,9 +557,9 @@ Paid Ads generate:
 
 and:
 
-### **36.98% View-to-Cart conversion**
+### **36.98% View to Cart conversion**
 
-This makes Paid Ads the second-best traffic source by overall conversion rate.
+This makes Paid Ads the second best traffic source by overall conversion rate.
 
 ### Recommendation
 
@@ -591,10 +589,10 @@ Its overall conversion rate is:
 
 Focus on:
 
-- High-intent SEO
+- High intent SEO
 - Landing page optimization
 - Product discovery
-- Conversion-oriented content
+- Conversion oriented content
 
 ---
 
@@ -632,7 +630,7 @@ The business should avoid assuming that Social itself is inherently low quality 
 
 The biggest customer loss occurs before Add to Cart:
 
-### **68.94% drop-off**
+### **68.94% drop off**
 
 The business should prioritize improving the earliest major conversion bottleneck.
 
@@ -724,7 +722,7 @@ These should be treated as hypotheses and tested through controlled experimentat
 
 ---
 
-# Re engage Early Funnel Drop-Offs
+# Re engage Early Funnel Drop Offs
 
 The largest recoverable audience consists of users who:
 
@@ -746,7 +744,7 @@ The most important experiment metric should be:
 
 ### View → Add to Cart Conversion Rate
 
-The objective should be to determine which specific changes increase the percentage of visitors entering the high-converting lower funnel.
+The objective should be to determine which specific changes increase the percentage of visitors entering the high converting lower funnel.
 
 ---
 
@@ -828,15 +826,15 @@ However, funnel analysis reveals that the greatest opportunity occurs much earli
 
 At the same time:
 
-### **91.88% of users reaching Payment Info complete a purchase.**
+### **91.88% of users reaching Payment complete a purchase.**
 
 The analysis therefore identifies the top of the funnel as the primary area for optimization.
 
 # Final Business Recommendation
 
-## Prioritize improving:
+### Prioritize improving:
 
-# PAGE VIEW → ADD TO CART
+## PAGE VIEW → ADD TO CART
 
 The next step should be controlled experimentation focused on:
 
